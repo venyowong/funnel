@@ -1,0 +1,11 @@
+Inputs:
+  - C:\logs\15.13\user\Backup\newlog\log5\2020-02-03.log
+Encoding: GB2312
+Limitation: 100000
+Multiline: true
+LineHead: ^@Log Begin
+Keywords:
+  - f0dfee4f75f4431b9424912bacf6d99f
+Outputs:
+  - console
+  - file:C:\logs\15.13\user\Backup\newlog\log5\fetcher.txt
