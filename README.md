@@ -45,5 +45,8 @@ Outputs:
     ```
 - Outputs为查询到的日志信息的输出方式，目前支持console和file两种方式，file后面紧跟一个英文冒号以及文件目录
 
-运行命令：
+### 运行命令：
 dotnet run funnel.yml
+
+### 或下载 release 包，运行：
+funnel funnel.yml
