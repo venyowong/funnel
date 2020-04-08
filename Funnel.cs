@@ -81,18 +81,18 @@ namespace Funnel
         {
             try
             {
-                using(var source = File.OpenRead(path))
+                using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                 {
                     StreamReader reader = null;
                     if (!string.IsNullOrWhiteSpace(this.config.Encoding))
                     {
-                        reader = new StreamReader(source, Encoding.GetEncoding(this.config.Encoding), true);
+                        reader = new StreamReader(stream, Encoding.GetEncoding(this.config.Encoding), true);
                     }
                     else
                     {
-                        reader = new StreamReader(source, true);
+                        reader = new StreamReader(stream, true);
                     }
-                    using(reader)
+                    using (reader)
                     {
                         await Filter(reader, path);
                     }
