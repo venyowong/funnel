@@ -37,7 +37,7 @@ Outputs:
         }
     }
     ```
-- Keywords为想要查询的文本信息，列表中项与项之间的关系为or，若需要实现and关系，可以使用正则表达式，比如：
+- Keywords为想要查询的文本信息，列表中项与项之间的关系为or：
     ```
     Keywords:
       - aaaa.*bbbb
